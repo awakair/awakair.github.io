@@ -19,6 +19,8 @@ jobs:
       - run: rm -rf node_modules/
       - run: mv dist/* ./
       - run: rm -rf dist
+      - run: apt-get install wget
+      - run: wget https://avatars.githubusercontent.com/awakair -O favicon.ico
 
       - name: Commit files
         run: |
