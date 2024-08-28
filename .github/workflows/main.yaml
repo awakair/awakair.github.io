@@ -9,26 +9,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install gulp
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 20
-      - run: |
+
+      - name: Install gulp
+        run: |
           npm ci
           npm install -g gulp
 
       - name: Run gulp
-      - run: gulp
+        run: gulp
 
       - name: Clean files after gulp
-      - run: |
+        run: |
           rm -rf node_modules/
           mv dist/* ./
           rm -rf dist
 
       - name: Get favicon
-      - run: |
+        run: |
           apt-get install wget
           sudo wget https://avatars.githubusercontent.com/awakair -O favicon.ico
 
