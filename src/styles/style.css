@@ -11,8 +11,10 @@ body {
     background-color: #282828;
     color: #bdae93;
     font-family: 'JetBrains Mono', monospace;
-    margin-left: 15em;
-    margin-right: 15em;
+}
+
+@media only screen and (min-width: 1000px) {
+    body{ margin-left: 15em; margin-right: 15em;}
 }
 
 .header {
