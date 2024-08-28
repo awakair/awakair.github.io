@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    background-color: #282828;
+    color: #bdae93;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.header {
+    display: flex;
+    padding-top: 1em;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 0.5em;
+}
+
+.links {
+    display: flex;
+    vertical-align: middle;
+}
+
+.links > h2 {
+    margin-left: 1.5em;
+}
+
+a {
+    all: unset;
+    color: #cc241d;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.current-path {
+    color: #83a598;
+}
+
+h3 {
+    color: #98971a;
+}
+
+.pet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.used_skills {
+    color: #83a598;
+}

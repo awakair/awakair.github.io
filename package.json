@@ -1,0 +1,23 @@
+{
+  "name": "awakair.github.io",
+  "version": "1.0.0",
+  "description": "personal webiste of @awakair",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awakair/awakait.github.io.git"
+  },
+  "author": "awakair",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/awakair/awakait.github.io/issues"
+  },
+  "homepage": "https://github.com/awakair/awakait.github.io#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-pug": "^5.0.0"
+  }
+}
