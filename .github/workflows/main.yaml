@@ -30,8 +30,8 @@ jobs:
 
       - name: Get favicon
         run: |
-          apt-get install wget
-          sudo wget https://avatars.githubusercontent.com/awakair -O favicon.ico
+          sudo apt-get install wget
+          wget https://avatars.githubusercontent.com/awakair -O favicon.ico
 
       - name: Commit files
         run: |
