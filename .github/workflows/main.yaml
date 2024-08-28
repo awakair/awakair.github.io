@@ -14,20 +14,23 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 20
-      - run: npm ci
-      - run: npm install -g gulp
+      - run: |
+          npm ci
+          npm install -g gulp
 
       - name: Run gulp
       - run: gulp
 
       - name: Clean files after gulp
-      - run: rm -rf node_modules/
-      - run: mv dist/* ./
-      - run: rm -rf dist
+      - run: |
+          rm -rf node_modules/
+          mv dist/* ./
+          rm -rf dist
 
       - name: Get favicon
-      - run: apt-get install wget
-      - run: sudo wget https://avatars.githubusercontent.com/awakair -O favicon.ico
+      - run: |
+          apt-get install wget
+          sudo wget https://avatars.githubusercontent.com/awakair -O favicon.ico
 
       - name: Commit files
         run: |
