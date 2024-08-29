@@ -60,3 +60,10 @@ h3 {
 .contact {
     margin-top: 0.5em;
 }
+
+.cv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
