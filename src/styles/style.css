@@ -16,6 +16,7 @@ body {
 @media only screen and (min-width: 1200px) {
     body{ margin-left: 15em; margin-right: 15em;}
     .pet { display: flex; justify-content: space-between;}
+    .contacts{ margin-left: 10em; margin-right: 10em;}
 }
 
 .header {
