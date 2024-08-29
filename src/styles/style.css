@@ -13,8 +13,9 @@ body {
     font-family: 'JetBrains Mono', monospace;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     body{ margin-left: 15em; margin-right: 15em;}
+    .pet { display: flex; justify-content: space-between;}
 }
 
 .header {
@@ -49,11 +50,6 @@ a:hover {
 
 h3 {
     color: #98971a;
-}
-
-.pet {
-    display: flex;
-    justify-content: space-between;
 }
 
 .used_skills {
